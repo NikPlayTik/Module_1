@@ -8,14 +8,48 @@ namespace Module_1
 {
     class CityFinder
     {
-        public static int FindCityIndex(string[] cities, string cityName)
+        public static void FindCityIndex()
         {
+            // массив 5 городов
+            string[] cities =
+            {
+                "Минск",
+                "Орша",
+                "Витебск",
+                "Могилев",
+                "Брест"
+            };
+
+            // ввод названия города
+            Console.Write("Введите название города: ");
+            string cityName = Console.ReadLine();
+
+            // приведение названия введенного города к нижнему регистру для последуйщего сравнения
+            string cityName_temp = cityName.ToLower();
+
+            // флаг для результата поиска
+            bool flag_search = false;
+
+            // цикл поиска города в массиве
             for (int i = 0; i < cities.Length; i++)
             {
-                if (cities[i].Equals(cityName, StringComparison.OrdinalIgnoreCase))
-                    return i;
+                // условие, приведение всех городов к нижнему регистру и сравнение
+                // по индексу каждый город из временной переменной
+                if (cities[i].ToLower() == cityName_temp)
+                {
+                    Console.WriteLine($"Город {cityName}, найден, его индекс: {i}");
+                    flag_search = true;
+                    break;
+                }
             }
-            return -1; // Город не найден
+
+            // условие если не будет найден город 
+            if (!flag_search)
+            {
+                Console.WriteLine($"Данный город {cityName}, не найден");
+            }
+
+            Console.ReadLine();
         }
     }
 }

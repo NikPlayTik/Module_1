@@ -8,19 +8,30 @@ namespace Module_1
 {
     class PalindromeChecker
     {
-        public static bool IsPalindrome(string input)
+        public static void Palindrome()
         {
-            input = input.ToLower();
-            int left = 0;
-            int right = input.Length - 1;
-            while (left < right)
+            // ввод строки с клавиатуры
+            Console.Write("Введите строку: ");
+            string input = Console.ReadLine();
+
+            // создание временной переменной которая будет содержать только буквы и цифры с нижнем регистром
+            string input_temp = new string(input.Where(c => char.IsLetterOrDigit(c)).ToArray()).ToLower();
+
+            // создание переменной обратной строки из временной переменной 
+            string reversed = new string(input_temp.Reverse().ToArray());
+
+            // условие строки является ли она палиндромом
+            if (input_temp == reversed)
             {
-                if (input[left] != input[right])
-                    return false;
-                left++;
-                right--;
+                Console.WriteLine($"Строка: {input}, палиндром");
             }
-            return true;
+            else
+            {
+                Console.WriteLine($"Строка: {input}, не палиндром");
+            }
+
+            Console.ReadLine();
         }
+
     }
 }
