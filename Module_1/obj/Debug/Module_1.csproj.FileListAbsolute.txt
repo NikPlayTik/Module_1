@@ -1,0 +1,8 @@
+D:\Laboratary and practical\Практика\Практика по программированию\1 Модуль Анищенко\C#\Module_1\Module_1\bin\Debug\Module_1.exe.config
+D:\Laboratary and practical\Практика\Практика по программированию\1 Модуль Анищенко\C#\Module_1\Module_1\bin\Debug\Module_1.exe
+D:\Laboratary and practical\Практика\Практика по программированию\1 Модуль Анищенко\C#\Module_1\Module_1\bin\Debug\Module_1.pdb
+D:\Laboratary and practical\Практика\Практика по программированию\1 Модуль Анищенко\C#\Module_1\Module_1\obj\Debug\Module_1.csproj.AssemblyReference.cache
+D:\Laboratary and practical\Практика\Практика по программированию\1 Модуль Анищенко\C#\Module_1\Module_1\obj\Debug\Module_1.csproj.SuggestedBindingRedirects.cache
+D:\Laboratary and practical\Практика\Практика по программированию\1 Модуль Анищенко\C#\Module_1\Module_1\obj\Debug\Module_1.csproj.CoreCompileInputs.cache
+D:\Laboratary and practical\Практика\Практика по программированию\1 Модуль Анищенко\C#\Module_1\Module_1\obj\Debug\Module_1.exe
+D:\Laboratary and practical\Практика\Практика по программированию\1 Модуль Анищенко\C#\Module_1\Module_1\obj\Debug\Module_1.pdb
